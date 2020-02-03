@@ -1,0 +1,24 @@
+<div class = "align-center">
+<h3>String Concat and Display using Interpolation</h3>
+</div><br />
+<div class = "container">
+  <mat-label>
+    Enter your first name
+  </mat-label><br />
+  <mat-form-field appearance="outline" color="indigo">
+    <input matInput [(ngModel)] = "name.firstName" />
+  </mat-form-field>
+</div><br />
+<div class = "container">
+  <mat-label>
+    Enter your last name
+  </mat-label><br />
+  <mat-form-field appearance="outline" color="indigo">
+    <input matInput [(ngModel)] = "name.lastName" />
+  </mat-form-field>
+</div><br />
+<div class = "container">
+  <mat-label>
+    Welcome {{name.firstName}} {{name.lastName}}
+  </mat-label>
+</div>
